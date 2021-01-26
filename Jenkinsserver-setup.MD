@@ -35,4 +35,7 @@ change shell from /bin/false to /bin/bash
   sudo groupadd docker
   sudo usermod -aG docker jenkins
   sudo chmod 777 /var/run/docker.sock
+  vi /etc/sudoers
+  ##below the root
+  jenkins ALL=(ALL)   ALL    NOPASSWD: ALL
 ```
